@@ -1,0 +1,7 @@
+*.pyc
+data/dcase
+data/audioset
+data/sequential
+workspace/dcase
+workspace/audioset
+workspace/sequential
