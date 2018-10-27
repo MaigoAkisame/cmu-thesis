@@ -70,7 +70,7 @@ These archives contain Matlab data files (with the `.mat` extension) that store 
 * `feat`: Filterbank features, a float32 array of shape (n, 400, 64) (n recordings, 400 frames, 64 frequency bins);
 * `labels`:
   * Presence/absence labeling, a boolean array of shape (n, m) (n recordings, m event types), or
-  * or strong labelng, a boolean array of shape (n, 100, m) (n recordings, 100 frames, m event types);
+  * Strong labelng, a boolean array of shape (n, 100, m) (n recordings, 100 frames, m event types);
 * `hashes`: A character array of size (n, 11), containing the YouTube hash IDs of the recordings.
 
 Training recordings are organized by class (so data balancing can be done easily), and each Matlab file contains up to 101 recordings. Validation and test/evaluation recordings are stored in Matlab files that contain up to 500 recordings each.
