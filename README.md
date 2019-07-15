@@ -62,8 +62,8 @@ Some scripts that may be of special interest:
 The script `data/download.sh` will download and extract the following three archives in the `data` directory:
 
 * [dcase.tgz](http://islpc21.is.cs.cmu.edu/yunwang/git/cmu-thesis/data/dcase.tgz) (4.9 GB)
-* [audioset.tgz](http://islpc21.is.cs.cmu.edu/yunwang/git/cmu-thesis/data/dcase.tgz) (341 GB)
-* [sequential.tgz](http://islpc21.is.cs.cmu.edu/yunwang/git/cmu-thesis/data/dcase.tgz) (63 GB)
+* [audioset.tgz](http://islpc21.is.cs.cmu.edu/yunwang/git/cmu-thesis/data/audioset.tgz) (341 GB)
+* [sequential.tgz](http://islpc21.is.cs.cmu.edu/yunwang/git/cmu-thesis/data/sequential.tgz) (63 GB)
 
 These archives contain Matlab data files (with the `.mat` extension) that store the filterbank features and ground truth labels. They can be loaded with the `scipy.io.loadmat` function in Python. Each Matlab file contains three matrices:
 
