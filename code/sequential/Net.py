@@ -13,6 +13,8 @@ class ConvBlock(nn.Module):
         self.kernel_size = kernel_size_2d
         self.batch_norm = batch_norm
         self.pool_stride = pool_stride
+        # "~batch_norm" should be written as "not batch_norm"; otherwise ~True will evaluate to -2 and be treated as True.
+        # But I'll keep this error to avoid breaking existing models.
         self.conv = nn.Conv2d(self.n_input, self.n_output, self.kernel_size, padding = tuple(x/2 for x in self.kernel_size), bias = ~batch_norm)
         if batch_norm: self.bn = nn.BatchNorm2d(self.n_output)
         nn.init.xavier_uniform(self.conv.weight)
