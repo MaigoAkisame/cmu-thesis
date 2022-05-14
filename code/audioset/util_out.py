@@ -3,7 +3,7 @@ import numpy
 
 def roc(pred, truth):
     data = numpy.array(sorted(zip(pred, truth), reverse = True))
-    pred, truth = data[:,0], data[:,1]
+    pred, truth = data[:,0], data[:,1].astype("bool")
     TP = truth.cumsum()
     FP = (1 - truth).cumsum()
     mask = numpy.concatenate([numpy.diff(pred) < 0, numpy.array([True])])
